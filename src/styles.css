@@ -1,0 +1,81 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.suggestions {
+  margin-top: 30px;
+}
+
+.lists {
+  font-size: 1.2rem;
+  list-style: none;
+  text-align: center;
+}
+
+.list-items {
+  color: #000000;
+  display: inline;
+  padding: 10px 10px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #0142da;
+}
+
+.output {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.output div {
+  border: 1px solid blue;
+  margin: 15px 5px;
+}
+.output button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: none;
+  background-color: #0142da;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.output button a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+@media (min-width: 710px) and (max-width: 1217px) {
+  .output {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media only screen and (max-width: 709px) {
+  .output {
+    grid-template-columns: 100%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .list-items {
+    display: block;
+    margin-right: 25px;
+  }
+}
